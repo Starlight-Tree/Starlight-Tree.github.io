@@ -23,8 +23,14 @@
     <p class="tags">FastAPI · Next.js · TypeScript · Postgres · Docker Compose</p>
     <p>An ordering app for a fictional café chain: pickup and delivery for customers, a prep board and stock for staff, analytics for managers. Stock is an append-only ledger, so the same item is never sold twice.</p>
     <div class="shots">
-      <img src="img/shoporder-menu.jpg" alt="ShopOrder menu screen" loading="lazy">
-      <img src="img/shoporder-overview.jpg" alt="ShopOrder manager overview with sales line chart" loading="lazy">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="img/shoporder-menu-dark.jpg">
+        <img src="img/shoporder-menu.jpg" alt="ShopOrder menu screen" width="1264" height="896" loading="lazy">
+      </picture>
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="img/shoporder-overview-dark.jpg">
+        <img src="img/shoporder-overview.jpg" alt="ShopOrder manager overview with sales line chart" width="1264" height="928" loading="lazy">
+      </picture>
     </div>
   </section>
 
