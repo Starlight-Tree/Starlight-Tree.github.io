@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Starlight-Tree | Web アプリの作品</title>
+<meta name="description" content="FastAPI・Next.js・Postgres で一通り作った 3 つの Web アプリ。デモの舞台はすべて架空の世界です。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <h1>Starlight-Tree</h1>
+    <span class="lang"><a href="./">English</a> | 日本語</span>
+  </header>
+  <p class="lead">FastAPI・Next.js・Postgres で Web アプリを作っています。画面から API・DB・テストまで一続きで作り、設計の判断は文書（ADR）に残しています。</p>
+
+  <h2>作品</h2>
+  <p>3 つとも、舞台は架空の世界（惑星ザーハード）のデモです。実在の店・人・文書は使っていません。</p>
+
+  <section class="card">
+    <h3><a href="https://github.com/Starlight-Tree/ShopOrder">ShopOrder</a></h3>
+    <p class="tags">FastAPI · Next.js · TypeScript · Postgres · Docker Compose</p>
+    <p>架空のカフェチェーンの注文アプリです。お客様は画面で店頭受け取りと宅配を注文し、店は調理ボードと在庫を使い、店長は売上・時間帯・顧客の分析を見ます。在庫は追記だけの台帳で、同じ在庫を二重に売りません。チャットでの注文は、今のところバックエンドだけです。</p>
+    <div class="shots">
+      <img src="img/shoporder-menu.jpg" alt="ShopOrder のメニュー画面" loading="lazy">
+      <img src="img/shoporder-overview.jpg" alt="ShopOrder の店長の概況。売上の折れ線" loading="lazy">
+    </div>
+  </section>
+
+  <section class="card">
+    <h3><a href="https://github.com/Starlight-Tree/DocuNavi">DocuNavi</a></h3>
+    <p class="tags">FastAPI · LangGraph · Gemini · pgvector · Next.js</p>
+    <p>PDF の文書から、出典つきで答える RAG チャットボットです。サンプル文書は架空です。</p>
+    <div class="shots">
+      <img src="img/docunavi-chat.png" alt="DocuNavi の、出典つきの回答" loading="lazy">
+    </div>
+  </section>
+
+  <section class="card">
+    <h3><a href="https://github.com/Starlight-Tree/JobNavi">JobNavi</a></h3>
+    <p class="tags">FastAPI · Next.js · Postgres</p>
+    <p>架空の惑星の植物園の求人サイトです。求人の検索と詳細の画面があります。</p>
+    <div class="shots">
+      <img src="img/jobnavi-search.png" alt="JobNavi の求人検索画面" loading="lazy">
+    </div>
+  </section>
+
+  <h2>資格・学習</h2>
+  <ul>
+    <li>JDLA Deep Learning for ENGINEER 2024 #2</li>
+    <li>JDLA Deep Learning for GENERAL 2024 #1</li>
+    <li><a href="https://github.com/Starlight-Tree/kaggle">Kaggle</a>・<a href="https://github.com/Starlight-Tree/nishika">Nishika</a> のコンペの記録</li>
+  </ul>
+
+  <footer>
+    詳しい設計・実行方法・テストは、各リポジトリの README にあります。 <a href="https://github.com/Starlight-Tree">GitHub プロフィール</a>
+  </footer>
+</main>
+</body>
+</html>
