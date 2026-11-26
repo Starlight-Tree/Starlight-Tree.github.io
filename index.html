@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Starlight-Tree | Web app portfolio</title>
-<meta name="description" content="Three web apps built end to end with Go, FastAPI, Next.js and Postgres. All demos are set in a fictional world.">
+<meta name="description" content="Four web apps built end to end with Go, FastAPI, Next.js and Postgres: three demos set in a fictional world, and one that uses real aerial photos.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
   <p class="lead">I build web apps with Go, FastAPI, Next.js and Postgres: screens, API, database and tests, with design decisions kept in written records (ADRs).</p>
 
   <h2>Projects</h2>
-  <p>All three are demos set in a fictional world (the planet Zahard). No real shops, people or documents are used.</p>
+  <p>ShopOrder, DocuNavi and JobNavi are demos set in a fictional world (the planet Zahard) and use no real shops, people or documents. TownScan uses real aerial photos.</p>
 
   <section class="card">
     <h3><a href="https://github.com/Starlight-Tree/ShopOrder">ShopOrder</a></h3>
@@ -56,6 +56,23 @@
         <img src="img/jobnavi-search.png" alt="JobNavi job search screen" width="1280" height="900" loading="lazy">
       </picture>
     </div>
+  </section>
+
+  <section class="card">
+    <h3><a href="https://github.com/Starlight-Tree/TownScan">TownScan</a></h3>
+    <p class="tags">Go · Next.js · Postgres · Gemini · Python (building extraction)</p>
+    <p>A chat app that finds candidates for new buildings in the south-western suburbs of Paris from 2014 and 2024 aerial photos, and answers with a short text and one view: photos, a chart or a map. The app's screens are in Japanese. A local prototype; accuracy is not measured yet.</p>
+    <div class="shots">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="img/townscan-map-dark.jpg">
+        <img src="img/townscan-map.jpg" alt="TownScan map of the candidates in the 12 analysed areas" width="1280" height="752" loading="lazy">
+      </picture>
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="img/townscan-chat-dark.png">
+        <img src="img/townscan-chat.png" alt="TownScan chat answer with 2014 and 2024 photos of four candidates" width="1288" height="936" loading="lazy">
+      </picture>
+    </div>
+    <p class="tags">The photos shown are the four largest "not detected in 2014" candidates and are not necessarily typical of the detection quality. Map and photos: <a href="https://www.data.gouv.fr/datasets/plan-ign">Plan IGN</a> (last updated 2026-10-08) and <a href="https://www.data.gouv.fr/datasets/bd-ortho-r">BD ORTHO</a> (last updated 2026-11-18) by IGN, Licence Ouverte 2.0.</p>
   </section>
 
   <h2>Certifications and learning</h2>

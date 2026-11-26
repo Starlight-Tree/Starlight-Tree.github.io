@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Starlight-Tree | Web アプリの作品</title>
-<meta name="description" content="Go・FastAPI・Next.js・Postgres で一通り作った 3 つの Web アプリ。デモの舞台はすべて架空の世界です。">
+<meta name="description" content="Go・FastAPI・Next.js・Postgres で一通り作った 4 つの Web アプリ。3 つは架空の世界が舞台のデモ、1 つは実在の空中写真を使います。">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
   <p class="lead">Go・FastAPI・Next.js・Postgres で Web アプリを作っています。画面から API・DB・テストまで一続きで作り、設計の判断は文書（ADR）に残しています。</p>
 
   <h2>作品</h2>
-  <p>3 つとも、舞台は架空の世界（惑星ザーハード）のデモです。実在の店・人・文書は使っていません。</p>
+  <p>ShopOrder・DocuNavi・JobNavi は、舞台が架空の世界（惑星ザーハード）のデモで、実在の店・人・文書は使っていません。TownScan は実在の空中写真を使います。</p>
 
   <section class="card">
     <h3><a href="https://github.com/Starlight-Tree/ShopOrder">ShopOrder</a></h3>
@@ -56,6 +56,23 @@
         <img src="img/jobnavi-search.png" alt="JobNavi の求人検索画面" width="1280" height="900" loading="lazy">
       </picture>
     </div>
+  </section>
+
+  <section class="card">
+    <h3><a href="https://github.com/Starlight-Tree/TownScan">TownScan</a></h3>
+    <p class="tags">Go · Next.js · Postgres · Gemini · Python（建物の抽出）</p>
+    <p>パリ南西の近郊の 2014 年と 2024 年の空中写真から新築の候補を見つけ、質問に、短い文と 1 つの表示（写真・グラフ・地図）で答えるチャットアプリです。ローカルで動くたたき台で、精度は未測定です。</p>
+    <div class="shots">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="img/townscan-map-dark.jpg">
+        <img src="img/townscan-map.jpg" alt="TownScan の地図。解析した 12 地区の候補の位置" width="1280" height="752" loading="lazy">
+      </picture>
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="img/townscan-chat-dark.png">
+        <img src="img/townscan-chat.png" alt="TownScan のチャットの回答。4 件の候補の 2014 年と 2024 年の写真" width="1288" height="936" loading="lazy">
+      </picture>
+    </div>
+    <p class="tags">写真は「2014 年は未検出」の中で面積が大きい上位 4 件で、検出の出来を代表する例とは限りません。地図と写真の出典: IGN（フランス国土地理院）の <a href="https://www.data.gouv.fr/datasets/plan-ign">Plan IGN</a>（最終更新 2026-10-08）と <a href="https://www.data.gouv.fr/datasets/bd-ortho-r">BD ORTHO</a>（最終更新 2026-11-18）、Licence Ouverte 2.0。</p>
   </section>
 
   <h2>資格・学習</h2>
